@@ -1,0 +1,29 @@
+EJERCICIO TEMA 3 PARTE 1
+
+    public static void main(String[] args) {
+        int resultado = 0;
+        resultado = sumado(5, 2, 3);
+        System.out.println(resultado);
+    }
+
+    public static int sumado(int a, int b, int c) {
+        return a + b + c;
+    }
+
+TEMA 3 PARTE 2
+
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.addPuerta();
+        miCoche.addPuerta();
+        System.out.println("El numero de puertas de miCoche es: " + miCoche.puertas + " puertas.");
+    }
+
+class Coche {
+
+    public int puertas = 0;
+
+    public void addPuerta() {
+        this.puertas++;
+    }
+}
