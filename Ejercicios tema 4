@@ -1,0 +1,50 @@
+PARTE 1 -IF,ELSE IF, ELSE-
+     if (numero > 0) {
+            System.out.println("El numero es positivo");
+        } else if (numero < 0) {
+            System.out.println("El numero es negativo");
+        } else {
+            System.out.println("El numero es cero");
+        }
+
+PARTE 2 WHILE
+        while (numeroWhile < 3) {
+            System.out.println("El numero es: " + numeroWhile);
+            numeroWhile++;
+        }
+ 
+
+PARTE 3 DO WHILE
+      do {
+        System.out.println("El numero es: " + numeroWhile);
+        numeroWhile++;
+       } while (numeroWhile < 3);
+
+ PARTE 4 FOR
+        for (numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("El numero es: " + numeroFor);
+        }
+
+ PARTE 5 SWITCH
+        Scanner estaciones = new Scanner(System.in);
+        System.out.println("Introduce estacion: ");
+        String estacion = estaciones.nextLine();
+        switch (estacion) {
+            case "Primavera":
+                System.out.println("La estacion es Primavera");
+                break;
+            case "Verano":
+                System.out.println("La estacion es Verano");
+                break;
+            case "Otono":
+                System.out.println("La estacion es Otoño");
+                break;
+            case "Invierno":
+                System.out.println("La estacion es Invierno");
+                break;
+            default:
+                System.out.println("No es ninguna estacion");
+        }
+        
+        
+        
