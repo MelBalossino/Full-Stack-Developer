@@ -1,0 +1,198 @@
+EJERCICIO TEMA 3 PARTE 1
+
+    public static void main(String[] args) {
+        int resultado = 0;
+        resultado = sumado(5, 2, 3);
+        System.out.println(resultado);
+    }
+
+    public static int sumado(int a, int b, int c) {
+        return a + b + c;
+    }
+
+TEMA 3 PARTE 2
+
+    public static void main(String[] args) {
+        Coche miCoche = new Coche();
+        miCoche.addPuerta();
+        miCoche.addPuerta();
+        System.out.println("El numero de puertas de miCoche es: " + miCoche.puertas + " puertas.");
+    }
+
+class Coche {
+
+    public int puertas = 0;
+
+    public void addPuerta() {
+        this.puertas++;
+    }
+}
+
+
+EJERCICIOS TEMA 4 PARTE 1 
+    if (numeroIf > 0) {
+            System.out.println("El numero es positivo");
+        } else if (numeroIf < 0) {
+            System.out.println("El numero es negativo");
+        } else {
+            System.out.println("El numero es cero");
+        }
+
+ TEMA 4 PARTE 2
+        while (numeroWhile < 3) {
+            System.out.println("El numero es: " + numeroWhile);
+            numeroWhile++;
+        }
+
+TEMA 4 PARTE 3
+        do {
+            System.out.println("El numero es: " + numeroWhile);
+            numeroWhile++;
+        } while (numeroWhile < 3);
+
+TEMA 4 PARTE 4
+        for (numeroFor = 0; numeroFor <= 3; numeroFor++) {
+            System.out.println("El numero es: " + numeroFor);
+        }
+
+TEMA 4 PARTE 5
+        Scanner estaciones = new Scanner(System.in);
+        System.out.println("Ingresa estacion: ");
+        String estacion = estaciones.nextLine();
+        switch (estacion) {
+            case "Primavera":
+                System.out.println("La estacion es Primavera");
+                break;
+            case "Verano":
+                System.out.println("La estacion es Verano");
+                break;
+            case "Otono":
+                System.out.println("La estacion es Otoño");
+                break;
+            case "Invierno":
+                System.out.println("La estacion es Invierno");
+                break;
+            default:
+                System.out.println("No es ninguna estacion");
+        }
+    }
+
+TEMA 8
+ public static void main(String[] args) {
+        Persona miPersona = new Persona();
+
+        miPersona.setNombre("Melodi");
+        miPersona.setEdad(30);
+        miPersona.setTelefono(3518071143);
+
+        System.out.println("Mi nombre es " + miPersona.getNombre() + " y tengo " + miPersona.getEdad() + " años. Este es mi telefono: " + miPersona.getTelefono());
+    }
+}
+
+class Persona {
+    private int edad = 0;
+    private String nombre;
+    private int telefono;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.nombre = Nombre;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+
+TEMA 9
+public static void main(String[] args) {
+        Cliente miCliente = new Cliente();
+
+        miCliente.setNombre("Melodi");
+        miCliente.setEdad(30);
+        miCliente.setTelefono(3518071143);
+        miCliente.setCredito(2000);
+
+        System.out.println("Mi nombre es " + miCliente.getNombre() + " y tengo " + miCliente.getEdad() + " años. Este es mi telefono: " + miCliente.getTelefono());
+        System.out.println("El credito asciende a: " + miCliente.getCredito() + " €");
+
+        Trabajador miTrabajador = new Trabajador();
+
+        miTrabajador.setNombre("Martin Villafañe");
+        miTrabajador.setEdad(35);
+        miTrabajador.setTelefono(3512458796);
+        miTrabajador.setSalario(3000);
+
+        System.out.println("Trabajador: " + miTrabajador.getNombre());
+        System.out.println("Edad: " + miTrabajador.getEdad() + " años.");
+        System.out.println("Telefono de contacto: " + miTrabajador.getTelefono());
+        System.out.println("Salario: " + miTrabajador.getSalario() + " €");
+    }
+    
+class Persona {
+    private int edad;
+    private String nombre;
+    private int telefono;
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.nombre = Nombre;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+}
+
+class Cliente extends Persona {
+    private int credito;
+    public int getCredito() {
+        return credito;
+    }
+
+    public void setCredito(int credito) {
+        this.credito = credito;
+    }
+
+}
+
+class Trabajador extends Persona {
+    int salario;
+    public int getSalario() {
+        return salario;
+    }
+
+    public void setSalario(int salario) {
+        this.salario = salario;
+    }
+
